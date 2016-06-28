@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShoppingCategoriesTableViewController : UITableViewController
-
+@interface ShoppingCategoriesTableViewController : UITableViewController{
+   
+    
+    NSMutableArray *groceryCategory;
+}
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic,weak) IBOutlet UITextField *categoryTextField;
+
 @end
 
 @implementation ViewController
@@ -18,6 +20,24 @@
     [super viewDidLoad];
         // Do any additional setup after loading the view, typically from a nib.
 }
+
+
+-(IBAction) close {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+-(IBAction) doneButtonPressed{
+    
+    
+    NSString *testText = self.categoryTextField.text;
+    
+    NSLog(@"%@", testText);
+
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
