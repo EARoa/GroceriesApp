@@ -14,6 +14,7 @@
 		10CE68831D22FE5A0091C1D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CE68821D22FE5A0091C1D3 /* Assets.xcassets */; };
 		10CE68861D22FE5A0091C1D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CE68841D22FE5A0091C1D3 /* LaunchScreen.storyboard */; };
 		10CE688F1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CE688E1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m */; };
+		10CE689D1D23488C0091C1D3 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CE689C1D23488C0091C1D3 /* Categories.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		10CE68871D22FE5A0091C1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10CE688D1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCategoriesTableViewController.h; sourceTree = "<group>"; };
 		10CE688E1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCategoriesTableViewController.m; sourceTree = "<group>"; };
+		10CE689B1D23488C0091C1D3 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		10CE689C1D23488C0091C1D3 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				10CE68761D22FE5A0091C1D3 /* Supporting Files */,
 				10CE688D1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.h */,
 				10CE688E1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m */,
+				10CE689B1D23488C0091C1D3 /* Categories.h */,
+				10CE689C1D23488C0091C1D3 /* Categories.m */,
 			);
 			path = GroceriesApp;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				10CE687E1D22FE5A0091C1D3 /* ViewController.m in Sources */,
 				10CE687B1D22FE5A0091C1D3 /* AppDelegate.m in Sources */,
 				10CE68781D22FE5A0091C1D3 /* main.m in Sources */,
+				10CE689D1D23488C0091C1D3 /* Categories.m in Sources */,
 				10CE688F1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +314,7 @@
 				10CE688C1D22FE5A0091C1D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

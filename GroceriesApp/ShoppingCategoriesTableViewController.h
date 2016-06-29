@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Categories.h"
 
 @interface ShoppingCategoriesTableViewController : UITableViewController{
-   
-    
     NSMutableArray *groceryCategory;
 }
+
 @end

@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o44-s9-05G">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o44-s9-05G">
                                 <rect key="frame" x="158" y="199" width="285" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="2G2-mJ-3Oq"/>
+                                    <constraint firstAttribute="width" constant="285" id="5Rp-PB-Usl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -28,8 +28,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.50980392159999999" green="0.56078431370000004" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="o44-s9-05G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="6wn-ny-laK"/>
-                            <constraint firstItem="o44-s9-05G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vbE-VF-ayH"/>
+                            <constraint firstItem="o44-s9-05G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="135" id="YWi-Lq-y9X"/>
+                            <constraint firstItem="o44-s9-05G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mSn-mn-OwS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Category" id="kYz-vw-bGo">

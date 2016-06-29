@@ -17,7 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    groceryCategory = [NSMutableArray arrayWithObjects:@"Lunch",@"Dinner", nil];
+//    groceryCategory = [NSMutableArray arrayWithObjects:@"Lunch",@"Dinner", nil];
+    
+    Categories *firstCategory = [[Categories alloc]initWithTitle:@"Breakfast"];
+    Categories *secondCategory = [[Categories alloc]initWithTitle:@"Lunch"];
+
+    
+    groceryCategory = [NSMutableArray arrayWithObjects:firstCategory.title, secondCategory.title, nil];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
