@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Categories.h"
 
 @interface ViewController : UIViewController
+
+@property Categories *groceryCategory;
 
 
 @end

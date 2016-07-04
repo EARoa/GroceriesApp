@@ -18,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
         // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -33,7 +36,7 @@
     
     NSString *testText = self.categoryTextField.text;
     
-    NSLog(@"%@", testText);
+    NSLog(@"You've entered: %@", testText);
 
     
 }

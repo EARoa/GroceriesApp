@@ -7,31 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		109E21B21D2AB28E00B6C81D /* GroceryCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E21B11D2AB28E00B6C81D /* GroceryCategoryTableViewController.m */; };
+		109E21B51D2AB2AF00B6C81D /* AddGroceryCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E21B41D2AB2AF00B6C81D /* AddGroceryCategoryViewController.m */; };
+		109E21B81D2AB2BE00B6C81D /* GroceryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E21B71D2AB2BE00B6C81D /* GroceryCategory.m */; };
+		109E21BC1D2AB2EF00B6C81D /* GroceryItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E21BB1D2AB2EF00B6C81D /* GroceryItemsViewController.m */; };
+		109E21BF1D2AB32800B6C81D /* GroceryItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E21BE1D2AB32800B6C81D /* GroceryItemsTableViewController.m */; };
+		109E21C21D2AB33700B6C81D /* GroceryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E21C11D2AB33700B6C81D /* GroceryItem.m */; };
 		10CE68781D22FE5A0091C1D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CE68771D22FE5A0091C1D3 /* main.m */; };
 		10CE687B1D22FE5A0091C1D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CE687A1D22FE5A0091C1D3 /* AppDelegate.m */; };
-		10CE687E1D22FE5A0091C1D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CE687D1D22FE5A0091C1D3 /* ViewController.m */; };
 		10CE68811D22FE5A0091C1D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CE687F1D22FE5A0091C1D3 /* Main.storyboard */; };
 		10CE68831D22FE5A0091C1D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CE68821D22FE5A0091C1D3 /* Assets.xcassets */; };
 		10CE68861D22FE5A0091C1D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CE68841D22FE5A0091C1D3 /* LaunchScreen.storyboard */; };
-		10CE688F1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CE688E1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m */; };
-		10CE689D1D23488C0091C1D3 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CE689C1D23488C0091C1D3 /* Categories.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		109E21B01D2AB28E00B6C81D /* GroceryCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryCategoryTableViewController.h; sourceTree = "<group>"; };
+		109E21B11D2AB28E00B6C81D /* GroceryCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryCategoryTableViewController.m; sourceTree = "<group>"; };
+		109E21B31D2AB2AF00B6C81D /* AddGroceryCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGroceryCategoryViewController.h; sourceTree = "<group>"; };
+		109E21B41D2AB2AF00B6C81D /* AddGroceryCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGroceryCategoryViewController.m; sourceTree = "<group>"; };
+		109E21B61D2AB2BE00B6C81D /* GroceryCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryCategory.h; sourceTree = "<group>"; };
+		109E21B71D2AB2BE00B6C81D /* GroceryCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryCategory.m; sourceTree = "<group>"; };
+		109E21BA1D2AB2EF00B6C81D /* GroceryItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryItemsViewController.h; sourceTree = "<group>"; };
+		109E21BB1D2AB2EF00B6C81D /* GroceryItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryItemsViewController.m; sourceTree = "<group>"; };
+		109E21BD1D2AB32800B6C81D /* GroceryItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryItemsTableViewController.h; sourceTree = "<group>"; };
+		109E21BE1D2AB32800B6C81D /* GroceryItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryItemsTableViewController.m; sourceTree = "<group>"; };
+		109E21C01D2AB33700B6C81D /* GroceryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryItem.h; sourceTree = "<group>"; };
+		109E21C11D2AB33700B6C81D /* GroceryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryItem.m; sourceTree = "<group>"; };
 		10CE68731D22FE590091C1D3 /* GroceriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CE68771D22FE5A0091C1D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10CE68791D22FE5A0091C1D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10CE687A1D22FE5A0091C1D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		10CE687C1D22FE5A0091C1D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		10CE687D1D22FE5A0091C1D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		10CE68801D22FE5A0091C1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10CE68821D22FE5A0091C1D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10CE68851D22FE5A0091C1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10CE68871D22FE5A0091C1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10CE688D1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCategoriesTableViewController.h; sourceTree = "<group>"; };
-		10CE688E1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCategoriesTableViewController.m; sourceTree = "<group>"; };
-		10CE689B1D23488C0091C1D3 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
-		10CE689C1D23488C0091C1D3 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		109E21AF1D2AB27500B6C81D /* GroceryCategories */ = {
+			isa = PBXGroup;
+			children = (
+				109E21B01D2AB28E00B6C81D /* GroceryCategoryTableViewController.h */,
+				109E21B11D2AB28E00B6C81D /* GroceryCategoryTableViewController.m */,
+				109E21B31D2AB2AF00B6C81D /* AddGroceryCategoryViewController.h */,
+				109E21B41D2AB2AF00B6C81D /* AddGroceryCategoryViewController.m */,
+				109E21B61D2AB2BE00B6C81D /* GroceryCategory.h */,
+				109E21B71D2AB2BE00B6C81D /* GroceryCategory.m */,
+			);
+			name = GroceryCategories;
+			sourceTree = "<group>";
+		};
+		109E21B91D2AB2CB00B6C81D /* GroceryItems */ = {
+			isa = PBXGroup;
+			children = (
+				109E21BA1D2AB2EF00B6C81D /* GroceryItemsViewController.h */,
+				109E21BB1D2AB2EF00B6C81D /* GroceryItemsViewController.m */,
+				109E21BD1D2AB32800B6C81D /* GroceryItemsTableViewController.h */,
+				109E21BE1D2AB32800B6C81D /* GroceryItemsTableViewController.m */,
+				109E21C01D2AB33700B6C81D /* GroceryItem.h */,
+				109E21C11D2AB33700B6C81D /* GroceryItem.m */,
+			);
+			name = GroceryItems;
+			sourceTree = "<group>";
+		};
 		10CE686A1D22FE590091C1D3 = {
 			isa = PBXGroup;
 			children = (
@@ -64,19 +99,15 @@
 		10CE68751D22FE5A0091C1D3 /* GroceriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				109E21AF1D2AB27500B6C81D /* GroceryCategories */,
+				109E21B91D2AB2CB00B6C81D /* GroceryItems */,
 				10CE68791D22FE5A0091C1D3 /* AppDelegate.h */,
 				10CE687A1D22FE5A0091C1D3 /* AppDelegate.m */,
-				10CE687C1D22FE5A0091C1D3 /* ViewController.h */,
-				10CE687D1D22FE5A0091C1D3 /* ViewController.m */,
 				10CE687F1D22FE5A0091C1D3 /* Main.storyboard */,
 				10CE68821D22FE5A0091C1D3 /* Assets.xcassets */,
 				10CE68841D22FE5A0091C1D3 /* LaunchScreen.storyboard */,
 				10CE68871D22FE5A0091C1D3 /* Info.plist */,
 				10CE68761D22FE5A0091C1D3 /* Supporting Files */,
-				10CE688D1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.h */,
-				10CE688E1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m */,
-				10CE689B1D23488C0091C1D3 /* Categories.h */,
-				10CE689C1D23488C0091C1D3 /* Categories.m */,
 			);
 			path = GroceriesApp;
 			sourceTree = "<group>";
@@ -159,11 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10CE687E1D22FE5A0091C1D3 /* ViewController.m in Sources */,
 				10CE687B1D22FE5A0091C1D3 /* AppDelegate.m in Sources */,
+				109E21B81D2AB2BE00B6C81D /* GroceryCategory.m in Sources */,
+				109E21C21D2AB33700B6C81D /* GroceryItem.m in Sources */,
+				109E21B21D2AB28E00B6C81D /* GroceryCategoryTableViewController.m in Sources */,
+				109E21B51D2AB2AF00B6C81D /* AddGroceryCategoryViewController.m in Sources */,
 				10CE68781D22FE5A0091C1D3 /* main.m in Sources */,
-				10CE689D1D23488C0091C1D3 /* Categories.m in Sources */,
-				10CE688F1D22FF810091C1D3 /* ShoppingCategoriesTableViewController.m in Sources */,
+				109E21BF1D2AB32800B6C81D /* GroceryItemsTableViewController.m in Sources */,
+				109E21BC1D2AB2EF00B6C81D /* GroceryItemsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
