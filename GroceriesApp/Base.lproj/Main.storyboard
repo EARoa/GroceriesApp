@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KON-IX-XpU">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KON-IX-XpU">
                                 <rect key="frame" x="139" y="112" width="322" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="322" id="QeH-Ve-K6a"/>
@@ -32,17 +32,20 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem title="Cancel" id="CvX-41-KTh">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="close:" destination="1S3-dN-CxH" id="udX-xB-4RW"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jC4-qf-4Sv"/>
-                                    <barButtonItem systemItem="add" id="M71-z0-rO4">
+                                    <barButtonItem title="Add" id="M71-z0-rO4">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="addButtonPressed:" destination="1S3-dN-CxH" id="LGu-8x-Zuv"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="barTintColor" red="0.28370150859999999" green="0.4271551724" blue="0.6408405304" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +53,7 @@
                             <constraint firstItem="DVa-ER-U9m" firstAttribute="leading" secondItem="gJl-qO-JSu" secondAttribute="leading" id="KTt-EO-zgF"/>
                             <constraint firstItem="DVa-ER-U9m" firstAttribute="centerX" secondItem="KON-IX-XpU" secondAttribute="centerX" id="MgK-LX-BiO"/>
                             <constraint firstAttribute="trailing" secondItem="DVa-ER-U9m" secondAttribute="trailing" id="hvD-AE-XAw"/>
-                            <constraint firstItem="KON-IX-XpU" firstAttribute="top" secondItem="DVa-ER-U9m" secondAttribute="bottom" constant="68" id="iyJ-gV-4qb"/>
+                            <constraint firstItem="KON-IX-XpU" firstAttribute="top" secondItem="DVa-ER-U9m" secondAttribute="bottom" constant="48" id="iyJ-gV-4qb"/>
                             <constraint firstItem="DVa-ER-U9m" firstAttribute="top" secondItem="gJl-qO-JSu" secondAttribute="top" id="lUu-Uo-cVU"/>
                         </constraints>
                     </view>
@@ -62,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="-1316" y="-1291"/>
         </scene>
-        <!--Grocery Category Table View Controller-->
+        <!--Grocery List-->
         <scene sceneID="QC9-HM-F1p">
             <objects>
                 <tableViewController id="jrk-dU-Xad" customClass="GroceryCategoryTableViewController" sceneMemberID="viewController">
@@ -88,8 +91,9 @@
                             <outlet property="delegate" destination="jrk-dU-Xad" id="xIB-73-4Fp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="pu3-zo-bL3">
+                    <navigationItem key="navigationItem" title="Grocery List" id="pu3-zo-bL3">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OV1-1o-27s">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="1S3-dN-CxH" kind="presentation" identifier="AddGroceryCategorySegue" id="HRT-xw-qUm"/>
                             </connections>
@@ -125,6 +129,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Item" id="vas-dr-Wik">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="F8S-fq-0Al">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="wS5-0p-VoJ" kind="presentation" identifier="AddGroceryItemsSegue" id="9Zd-fr-MeX"/>
                             </connections>
@@ -154,20 +159,23 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem title="Cancel" id="g5L-oc-Pbh">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="close:" destination="wS5-0p-VoJ" id="59A-oy-tVe"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="usi-tC-zgt"/>
-                                    <barButtonItem systemItem="add" id="aRY-Y2-u4F">
+                                    <barButtonItem title="Add" id="aRY-Y2-u4F">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="itemAddButtonPressed:" destination="wS5-0p-VoJ" id="fvn-gq-ZAL"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="barTintColor" red="0.28370150859999999" green="0.4271551724" blue="0.6408405304" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-gX-W4k">
-                                <rect key="frame" x="163" y="117" width="275" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-gX-W4k">
+                                <rect key="frame" x="163" y="137" width="275" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="8uZ-oe-y7b"/>
                                 </constraints>

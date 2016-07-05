@@ -73,6 +73,10 @@
         
         groceryItemsTableViewController.selectedGroceryCategory = selectedGroceryCategory;
         
+        
+//        GroceryItem *groceryItemsArray = groceryItemsArray;        
+//        NSLog(@"%@", groceryItemsArray);
+        
     };
 }
 

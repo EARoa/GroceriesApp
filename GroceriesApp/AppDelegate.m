@@ -25,8 +25,8 @@
 
 -(void) setupTheme{
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:45/255.0 green:62/255.0 blue:79/255.0 alpha:1.0]];
-    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:98/255.0 green:129/255.0 blue:175/255.0 alpha:1.0]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
 

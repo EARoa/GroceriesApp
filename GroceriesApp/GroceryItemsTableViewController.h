@@ -15,7 +15,7 @@
 
 
 @property (nonatomic,strong) GroceryCategory *selectedGroceryCategory;
-@property NSMutableArray *groceryItemsArray;
+@property (nonatomic, copy) NSMutableArray *groceryItemsArray;
 
 
 @end
