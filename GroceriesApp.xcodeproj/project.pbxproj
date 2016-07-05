@@ -151,6 +151,8 @@
 				TargetAttributes = {
 					10CE68721D22FE590091C1D3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3V8KXS5ZB4;
+						DevelopmentTeamName = "Efrain Ayllon";
 					};
 				};
 			};
