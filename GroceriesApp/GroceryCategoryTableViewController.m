@@ -35,10 +35,18 @@
     GroceryCategory *groceryCategory = [[GroceryCategory alloc]init];
     groceryCategory.title = category;
     
+    // initialize the grocery items array here
+    groceryCategory.groceryItemsArray = [NSMutableArray array]; // THIS LINE
+    
     [_groceryCategoriesArray addObject:groceryCategory];
     
     [self.tableView reloadData];
     NSLog(@"%@", category);
+    
+    
+    
+    
+    
     
 }
 
@@ -72,11 +80,7 @@
         
         
         groceryItemsTableViewController.selectedGroceryCategory = selectedGroceryCategory;
-        
-        
-//        GroceryItem *groceryItemsArray = groceryItemsArray;        
-//        NSLog(@"%@", groceryItemsArray);
-        
+
     };
 }
 

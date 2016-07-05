@@ -12,7 +12,7 @@
 
 @property (nonatomic,copy) NSString *title;
 
-@property (nonatomic,copy) NSMutableArray *groceryItemsArray;
+@property (nonatomic,strong) NSMutableArray *groceryItemsArray;
 
 
 

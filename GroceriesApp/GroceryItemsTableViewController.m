@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     self.title = self.selectedGroceryCategory.title;
-    _groceryItemsArray = [[NSMutableArray alloc] init];
+    _groceryItemsArray = self.selectedGroceryCategory.groceryItemsArray;
     
 }
 - (void)didReceiveMemoryWarning {
