@@ -20,6 +20,7 @@
     [super viewDidLoad];
     
     _groceryCategoriesArray = [[NSMutableArray alloc] init];
+
     
 }
 
@@ -35,16 +36,22 @@
     GroceryCategory *groceryCategory = [[GroceryCategory alloc]init];
     groceryCategory.title = category;
     
-    // initialize the grocery items array here
-    groceryCategory.groceryItemsArray = [NSMutableArray array]; // THIS LINE
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    NSData *groceryData = [NSKeyedArchiver archivedDataWithRootObject:category];
     
-    [_groceryCategoriesArray addObject:groceryCategory];
+    [userDefaults setObject:groceryData forKey:@"groceryData"];
+    
+    NSMutableArray *_groceryCategoriesArray = [NSMutableArray arrayWithObjects:category, nil];
+    
+    NSData *categoryArrayData = [NSKeyedArchiver archivedDataWithRootObject:_groceryCategoriesArray];
+    
+    [userDefaults setObject:categoryArrayData forKey:@"PersonArray"];
+    [userDefaults synchronize];
+    
     
     [self.tableView reloadData];
-    NSLog(@"%@", category);
-    
-    
-    
+    NSLog(@"%@", categoryArrayData);
     
     
     
