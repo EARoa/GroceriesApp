@@ -19,7 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _groceryCategoriesArray = [[NSMutableArray alloc] init];
+    NSData *categoryData = [[NSUserDefaults standardUserDefaults] objectForKey:@"categoryArrayData"];
+    NSMutableArray *categoryArrayData = [NSKeyedUnarchiver unarchiveObjectWithData:categoryData];
+
+    _groceryCategoriesArray = categoryArrayData;
+
 
     
 }
@@ -38,23 +42,14 @@
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
-    NSData *groceryData = [NSKeyedArchiver archivedDataWithRootObject:category];
-    
-    [userDefaults setObject:groceryData forKey:@"groceryData"];
-    
-    NSMutableArray *_groceryCategoriesArray = [NSMutableArray arrayWithObjects:category, nil];
-    
+    [_groceryCategoriesArray addObject:groceryCategory];
     NSData *categoryArrayData = [NSKeyedArchiver archivedDataWithRootObject:_groceryCategoriesArray];
-    
-    [userDefaults setObject:categoryArrayData forKey:@"PersonArray"];
+    [userDefaults setObject:categoryArrayData forKey:@"categoryArrayData"];
     [userDefaults synchronize];
     
     
     [self.tableView reloadData];
     NSLog(@"%@", categoryArrayData);
-    
-    
-    
 }
 
 
@@ -99,9 +94,7 @@
     
     GroceryCategory *groceryCategory = _groceryCategoriesArray[indexPath.row];
     cell.textLabel.text = groceryCategory.title;
-    
-    
-    
+
     
     return cell;
 }
