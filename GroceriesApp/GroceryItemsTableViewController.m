@@ -18,14 +18,14 @@
     [super viewDidLoad];
     
     self.title = self.selectedGroceryCategory.title;
-    
+    _groceryItemsArray = self.selectedGroceryCategory.groceryItemsArray;
+
         NSData *itemData = [[NSUserDefaults standardUserDefaults] objectForKey:@"itemArrayData"];
         if(itemData == nil){
             _groceryItemsArray = [NSMutableArray array];
         } else {
             _groceryItemsArray = (NSMutableArray *) [NSKeyedUnarchiver unarchiveObjectWithData:itemData];
         }
-    _groceryItemsArray = self.selectedGroceryCategory.groceryItemsArray;
 
 }
 
