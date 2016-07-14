@@ -9,7 +9,6 @@
 #import "GroceryCategoryTableViewController.h"
 #import "GroceryItemsTableViewController.h"
 
-
 @interface GroceryCategoryTableViewController () <AddCategoryDelegate>
 
 @end
@@ -20,12 +19,12 @@
     [super viewDidLoad];
     
     NSData *categoryData = [[NSUserDefaults standardUserDefaults] objectForKey:@"categoryArrayData"];
-    NSMutableArray *categoryArrayData = [NSKeyedUnarchiver unarchiveObjectWithData:categoryData];
-
-    _groceryCategoriesArray = categoryArrayData;
-
-
     
+    if(categoryData == nil){
+        _groceryCategoriesArray = [NSMutableArray array];
+    } else {
+        _groceryCategoriesArray = (NSMutableArray *) [NSKeyedUnarchiver unarchiveObjectWithData:categoryData];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,27 +79,19 @@
         
         GroceryCategory *selectedGroceryCategory = _groceryCategoriesArray [indexPath.row];
         
-        
         groceryItemsTableViewController.selectedGroceryCategory = selectedGroceryCategory;
 
     };
 }
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    
     GroceryCategory *groceryCategory = _groceryCategoriesArray[indexPath.row];
     cell.textLabel.text = groceryCategory.title;
-
     
     return cell;
 }
-
-
-
 
 @end
 

@@ -10,4 +10,22 @@
 
 @implementation GroceryItem
 
+- (instancetype)initWithCoder:(NSCoder *)coder{
+    
+    self = [super init];
+    
+    self.itemTitle = [coder decodeObjectForKey:@"itemTitle"];
+    
+    return self;
+    
+}
+
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.itemTitle forKey:@"itemTitle"];
+    
+}
+
+
+
 @end

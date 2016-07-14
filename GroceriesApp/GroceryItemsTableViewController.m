@@ -18,9 +18,18 @@
     [super viewDidLoad];
     
     self.title = self.selectedGroceryCategory.title;
-    _groceryItemsArray = self.selectedGroceryCategory.groceryItemsArray;
     
+        NSData *itemData = [[NSUserDefaults standardUserDefaults] objectForKey:@"itemArrayData"];
+        if(itemData == nil){
+            _groceryItemsArray = [NSMutableArray array];
+        } else {
+            _groceryItemsArray = (NSMutableArray *) [NSKeyedUnarchiver unarchiveObjectWithData:itemData];
+        }
+    _groceryItemsArray = self.selectedGroceryCategory.groceryItemsArray;
+
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -33,8 +42,11 @@
     GroceryItem *groceryItem = [[GroceryItem alloc] init];
     groceryItem.itemTitle = item;
     
-    [_groceryItemsArray addObject:groceryItem];
-    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [_groceryItemsArray addObject:groceryItem];
+        NSData *itemArrayData = [NSKeyedArchiver archivedDataWithRootObject:_groceryItemsArray];
+        [userDefaults setObject:itemArrayData forKey:@"itemArrayData"];
+        [userDefaults synchronize];
     
     [self.tableView reloadData];
     NSLog(@"%@", item);
